@@ -1,0 +1,29 @@
+/****************************
+Basic Page Styles
+***************************/
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-size: 1em;
+    background: #eac657;
+}
+
+/**************************
+Header
+**************************/
+#header {
+    float: left;
+    margin: 20px 0;
+    width: 100%;
+}
+h2 {
+    color:olivedrab; 
+    font-size: 25px;
+}
+
+/********************
+Main Content
+********************/
+#title {
+    background-color: tomato;
+}
