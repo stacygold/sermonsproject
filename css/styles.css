@@ -27,3 +27,41 @@ Main Content
 #title {
     background-color: tomato;
 }
+
+figure{
+position: relative;
+bottom: 0;
+width: 100%;
+
+}
+
+
+figcaption {
+
+    position: absolute;
+
+}
+
+/********
+text 
+***/
+.mytext{
+   position: absolute;
+   z-index: 1;
+   left: 0;
+    right: 0;
+}
+.mytext2{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+     right: 0;
+     top: 50px;
+ }
+.img-container {
+    text-align: center;
+}
+
+#image1 {
+    background-image: url("https://picsum.photos/250/300/?random");
+}
