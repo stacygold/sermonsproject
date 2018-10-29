@@ -44,14 +44,22 @@ text
     right: 0;
     bottom: 0px;
     white-space: nowrap;
-    
- }
+}
 .img-container {
     text-align: center;
+    padding: 10px;
 }
 
 #image1 {
-    background-image: url("https://picsum.photos/250/300/?random");
-    background-size: cover;
-   
+    background: url(https://via.placeholder.com/300x400) no-repeat center;
+    background-size: contain;
+    background-origin: content-box; 
 }
+#image2 {
+    background: url(https://via.placeholder.com/300x400) no-repeat center;
+    background-size: contain;
+    background-origin: content-box; 
+}
+.container {
+    padding-right: 25px;
+    }
