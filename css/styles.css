@@ -50,16 +50,23 @@ text
     padding: 10px;
 }
 
-#image1 {
+#image1, 
+#image2,
+#image3 {
     background: url(https://via.placeholder.com/300x400) no-repeat center;
     background-size: contain;
     background-origin: content-box; 
-}
+}/*
 #image2 {
     background: url(https://via.placeholder.com/300x400) no-repeat center;
     background-size: contain;
     background-origin: content-box; 
 }
+#image3 {
+    background: url(https://via.placeholder.com/300x400) no-repeat center;
+    background-size: contain;
+    background-origin: content-box; 
+}*/
 .container {
     padding-right: 25px;
     }
