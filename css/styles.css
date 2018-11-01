@@ -36,6 +36,7 @@ text
    z-index: 1;
    left: 0;
    right: 0;
+   
 }
 .scripture{
     position: absolute;
@@ -43,30 +44,36 @@ text
     left: 0;
     right: 0;
     bottom: 0px;
-    white-space: nowrap;
+    white-space: normal;
+    max-width: 300px;   
 }
+
 .img-container {
     text-align: center;
     padding: 10px;
-}
-
-#image1, 
-#image2,
-#image3 {
+    }
+/*
+#image1
+ {
     background: url(https://via.placeholder.com/300x400) no-repeat center;
     background-size: contain;
     background-origin: content-box; 
+    width: 300px;
+    height: 400px;
+}*/
+.image {
+    max-width:300px;
+    max-height:400px;
+     width: auto;
+     height: auto;
 }/*
-#image2 {
-    background: url(https://via.placeholder.com/300x400) no-repeat center;
-    background-size: contain;
-    background-origin: content-box; 
-}
 #image3 {
     background: url(https://via.placeholder.com/300x400) no-repeat center;
     background-size: contain;
     background-origin: content-box; 
+    width: 300px;
+    height: 400px;
 }*/
 .container {
-    padding-right: 25px;
+    padding-right: 15px;
     }
