@@ -5,27 +5,30 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS first, then Normalize CSS, then Styles Sheet CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
 
-        <title> Mount Zion Baptist Church</title>
+        <title>Mount Zion Baptist Church</title>
     </head>
+
     <body>
         <!-- Navagation Menu -->
-        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light" style="background-color:#e0b849;">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#">Mount Zion Baptist Church</a>
+                <a class="navbar-brand" href="index.html">Mount Zion Baptist Church</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link" href="#about">About Mount Zion</a>
-                            <a class="nav-item nav-link" href="#pastor">About the Pastor</a>
-                            <a class="nav-item nav-link" href="#ministries">Ministries</a>
-                            <a class="nav-item nav-link" href="#sermons">Recent Sermons</a>
-                            <a class="nav-item nav-link" href="#contact">Contact Us</a>
+                            <a class="nav-item nav-link" href="http://www.mtzionlou.com/home.html" target="_blank">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="http://www.mtzionlou.com/about-mount-zion.html" target="_blank">About Mt. Zion</a>
+                            <a class="nav-item nav-link" href="http://www.mtzionlou.com/about-the-pastor.html" target="_blank">About the Pastor</a>
+                            <a class="nav-item nav-link" href="http://www.mtzionlou.com/ministries.html" target="_blank">Ministries</a>
+                            <a class="nav-item nav-link" href="sermons.html">Recent Sermons</a>
+                            <a class="nav-item nav-link" href="http://www.mtzionlou.com/contact-us.html" target="_blank">Contact Us</a>
                         </div>
                     </div>
             </div>
@@ -35,29 +38,31 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-4 border border-danger">
-                    <h1 class="text-center font-weight-bold"> Adjusting Your Focus</h1>
-                    <img src="https://dummyimage.com/300x300/325/f2ff00.jpg" alt="Place Holder Image">
-                    <h3 class="text-center font-weight-bold">1 Corinthians : 17-18</h3> 
+                <div class="img-container col-4 border border-danger">
+                    <h1 class="topic text-center font-weight-bold"> Adjusting Your Focus</h1>
+                    <img src="https://via.placeholder.com/300x400" alt="Place Holder Image" class="image">
+                    <h3 class="scripture text-center font-weight-bold">1 Corinthians : 17-18</h3> 
                 </div>
-            </div>
+
+                <div class="img-container col-4 border border-danger" >
+                    <h1 class="topic text-center font-weight-bold">Don't Forget</h1>
+                 <img src="https://via.placeholder.com/300x400" alt="Place Holder Image" class="image">
+                    <h3 class="scripture text-center font-weight-bold">Joshua 3:8&13; 4:6-7 (ESV)</h3>
+                </div>
+
+            </div><!-- /row -->
         </div> <!-- /container -->
 
 
         <!-- footer -->
-        <footer class="footer">
+        <footer class="main-footer">
             <div class="row justify-content-md-center">
                 <div class="col col-md-3 text-md-left">
                 <p class="text-center">Early Morning Worship 9:00 am</p>
-                <p>Sunday School 10:05 am</p>
-                <p>Morning Worship 11:00 am</p>
-                </div>
-                <div class="col-6 border border-danger">
-                    <p class="text-center font-weight-bold"> 1472 Dixie Hwy, Louisville KY 40210</p>
-                </div>
-                <div class="col col-md-3 text-md-right">
-                Copyright © MOUNT ZION BAPTIST CHURCH 
-                </div>
+                <p class="text-center">Sunday School 10:05 am</p>
+                <p class="text-center">Morning Worship 11:00 am</p>
+                <p class="text-center"> &copy; MOUNT ZION BAPTIST CHURCH </p>
+                </div>               
             </div>
          </footer><!-- /footer -->
 

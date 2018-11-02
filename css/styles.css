@@ -1,36 +1,16 @@
 /****************************
 Basic Page Styles
-
-body {
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
-    font-size: 1em;
-    background: #eac657;
-}
-
-Header
-
-#header {
-    float: left;
-    margin: 20px 0;
-    width: 100%;
-}
-h2 {
-    color:olivedrab; 
-    font-size: 25px;
-}
-
-
-Main Content
-
-#title {
-    background-color: tomato;
-}
 ********************/
+.container {
+    padding-right: 15px;
+    }
+    
+.img-container {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    }
 
-/********
-text 
-***/
 .topic{
    position: absolute;
    z-index: 1;
@@ -38,42 +18,24 @@ text
    right: 0;
    
 }
-.scripture{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    white-space: normal;
-    max-width: 300px;   
-}
 
-.img-container {
-    text-align: center;
-    padding: 10px;
-    }
-/*
-#image1
- {
-    background: url(https://via.placeholder.com/300x400) no-repeat center;
-    background-size: contain;
-    background-origin: content-box; 
-    width: 300px;
-    height: 400px;
-}*/
 .image {
     max-width:300px;
     max-height:400px;
      width: auto;
      height: auto;
-}/*
-#image3 {
-    background: url(https://via.placeholder.com/300x400) no-repeat center;
-    background-size: contain;
-    background-origin: content-box; 
-    width: 300px;
-    height: 400px;
-}*/
-.container {
-    padding-right: 15px;
-    }
+}
+
+.scripture{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    white-space: normal;
+    width: 100%;   
+}
+
+
+
+
