@@ -1,29 +1,89 @@
 /****************************
-Basic Page Styles
+Navagation Menu Styles
 ********************/
+.navbar{
+    background-color: rosybrown;
+}
+
+/**************************************
+Styles for the Random Quotes
+**************************************/
+
+#quoteDisplay {
+    background-color: rgb(22, 70, 158);
+    color: bisque;
+    margin-bottom: 20px;
+   padding: 100px;
+    padding-right: 200px;
+    padding-left: 200px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+/*********************************
+Button Styling and affects
+**********************************/
+button {
+    background-color: rosybrown;
+    border: none;
+    color: rgb(63, 4, 4);
+    padding: 8px 24px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+button:hover {
+    background-color: #3b072c;
+    color: white;
+}
+
+button:active {
+    background-color: #b4469c;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+
+
+
 .container {
-    padding-right: 15px;
-    }
+    padding-right: 10px;
+}
 
 .img-container {
     text-align: center;
     padding: 10px;
     position: relative;
-    }
+    background-color: aquamarine;
+}
 
 .topic{
    position: absolute;
    z-index: 1;
    left: 0;
    right: 0;
-   
+   font-size: 1.38889rem;
+   line-height: 1.2em;
+   width: 50%;
+   margin: auto;
 }
 
 .image {
-    max-width:300px;
-    max-height:400px;
-     width: auto;
-     height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 22px;
+    margin: auto;
 }
 
 .scripture{
@@ -31,9 +91,12 @@ Basic Page Styles
     z-index: 1;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 12.5%;
     white-space: normal;
-    width: 100%;   
+    font-size: 1.38889rem;
+    line-height: 1.2em;  
+    width: 50%;
+    margin: auto;
 }
 
 
