@@ -1,3 +1,7 @@
+'use strict';
+/************************
+ * Random Quotes array
+ ************************/
 var quotes = [
     'Philippians 4:13 - I can do all this through him who gives me strength.',
     'Proverbs 3:5 - Trust in the LORD with all your heart and lean not on your own understanding;',
@@ -19,7 +23,9 @@ function newQuote() {
     document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
 }
 
-
+/************************************
+ * Clicking the thumbnail to enlarge
+ ************************************/
 var DETAIL_IMAGE_SELECTOR = '[data-image-role="target"]';
 var DETAIL_TITLE_SELECTOR = '[data-image-role="title"]';
 var THUMBNAIL_LINK_SELECTOR = '[data-image-role="trigger"]';

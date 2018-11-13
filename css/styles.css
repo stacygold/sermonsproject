@@ -1,11 +1,4 @@
-/****************************
-Navagation Menu Styles
-********************
-.navbar{
-    background-color: rosybrown;
-}
-
-**************************************
+/**************************************
 Styles for the Random Quotes
 **************************************/
 
@@ -13,7 +6,7 @@ Styles for the Random Quotes
     background-color: rgb(22, 70, 158);
     color: bisque;
     margin-bottom: 20px;
-   padding: 100px;
+    padding: 100px;
     padding-right: 200px;
     padding-left: 200px;
     text-align: center;
@@ -49,68 +42,6 @@ button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
-/*************************
-Sermons Page
-*************************/
-.container{
-    padding-right: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.img-container {
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    background-color: aquamarine;
-}
-
-.topic{
-   position: absolute;
-   z-index: 1;
-   left: 0;
-   right: 0;
-   font-size: 1.38889rem;
-   line-height: 1.2em;
-   width: 50%;
-   margin: auto;
-}
-
-.image {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 5px;
-    display: block;
-    margin-bottom: 22px;
-    margin: auto;
-}
-
-.scripture{
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    bottom: 12.5%;
-    white-space: normal;
-    font-size: 1.38889rem;
-    line-height: 1.2em;  
-    width: 50%;
-    margin: auto;
-}
-
-/**************************
-Media Queries
-**************************/
-@media all and (min-width: 640px) {
-    .img-container {
-        flex-direction: row;
-    }
-}
-
-@media all and (min-width: 1030px) {
-}
-
 
 /********************
 Thumbnail Styles
@@ -169,11 +100,14 @@ a {
     display: block;
     margin: 0;
     padding: 4px 10px;
-
     background: rgb(96, 125, 139);
     color: rgb(63, 4, 4);
     font-size: 12px;
 }
+
+/****************************
+Enlarged Thumbnail Image
+****************************/
 
 .detail-image-container {
     flex: 1 1 auto;
@@ -188,13 +122,19 @@ a {
 }
 
 .detail-image {
-    width: 90%;
+    width: 500px;
+    height: 500px;
 }
 
 .detail-image-title {
+    display: block;
     color: rebeccapurple;
     font-size: 40px;    
 }
+
+/**************************
+Media Queries
+*************************/
 
 @media all and (min-width: 768px) {
     .main-content {
