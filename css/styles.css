@@ -3,19 +3,23 @@ Styles for the Random Quotes
 **************************************/
 
 #quoteDisplay {
-    background-color: rgb(22, 70, 158);
-    color: bisque;
+    color: rgb(58, 17, 17);
     margin-bottom: 20px;
     padding: 100px;
     padding-right: 200px;
     padding-left: 200px;
     text-align: center;
     font-size: xx-large;
+
 }
 
 /*********************************
 Button Styling and affects
 **********************************/
+.quoteButton{
+    padding-left: 200px;
+}
+
 button {
     background-color: rosybrown;
     border: none;
@@ -29,7 +33,7 @@ button {
     box-shadow: 0 9px #999;
     cursor: pointer;
     outline: none;
-    position: relative;
+    position: static;
 }
 
 button:hover {
@@ -71,11 +75,11 @@ a {
     flex-direction: column;
 }
 
-
 .thumbnail-item {
     display: inline-block;
     min-width: 150px;
     max-width: 150px;
+    margin-right: 15px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
@@ -94,15 +98,17 @@ a {
 .thumbnail-image {
     display: block;
     width: 100%;
+    height: 125px;
 }
 
 .thumbnail-title {
     display: block;
     margin: 0;
-    padding: 4px 10px;
+    padding: 5px 10px;
     background: rgb(96, 125, 139);
     color: rgb(63, 4, 4);
     font-size: 12px;
+    
 }
 
 /****************************
@@ -122,8 +128,8 @@ Enlarged Thumbnail Image
 }
 
 .detail-image {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .detail-image-title {
@@ -136,8 +142,14 @@ Enlarged Thumbnail Image
 Media Queries
 *************************/
 
-@media all and (min-width: 768px) {
-    .main-content {
+@media all and (max-width: 800px) {
+    #quoteDisplay {
+
+    }
+
+
+
+   .main-content {
         flex-direction: row;
         overflow: hidden;
     }
@@ -145,14 +157,28 @@ Media Queries
     .thumbnail-list {
         flex-direction: column;
         order: 0;
-        margin-left: 20px;
-    }
+        margin-left: 30px;
+        top: 50px;
+        justify-content: space-between;
+        }
 
-    .thumbnail-item {
-        max-width: 260px;
-    }
-
-    .thumbnail-item + .thumbnail-item {
-        margin-top: 20px;
-    }
+        .thumbnail-item {
+            min-width: 160px;
+            max-width: 180px;
+        }
+        .thumbnail-item + .thumbnail-item {
+            margin-top: 20px;
+        }
+    
+        .detail-image-frame {
+            position: relative;
+            top: 150px;
+            text-align: center;
+        }
+    
+        .detail-image, .detail-image-title {
+        width: 250px;
+        height: 250px;
+        font-size: 20px; 
+        }
 }
