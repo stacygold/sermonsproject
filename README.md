@@ -6,4 +6,6 @@ This website is a list of thumnail pictures with weekly church topics that you c
 
 The Mount Zion Baptist Church title will take you to a random quote generator page, that you can click the button and get different bible quotes.
 
+To get to my project go to https://github.com/stacygold/sermonsproject, click the Clone or download button and unzip the folder onto you desktop.  Then open the index.html file.
+
 

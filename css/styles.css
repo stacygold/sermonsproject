@@ -14,7 +14,7 @@ Styles for the Random Quotes
 }
 
 /*********************************
-Button Styling and affects
+Button Styling and effects
 **********************************/
 .quoteButton{
     padding-left: 200px;
@@ -47,9 +47,9 @@ button:active {
     transform: translateY(4px);
 }
 
-/********************
-Thumbnail Styles
-********************/
+/***************************
+Thumbnail image list styles
+***************************/
 html, body {
     height: 100%;
 }
@@ -71,7 +71,6 @@ a {
 
 .main-content {
     flex: 1 1 auto;
-    display: flex;
     flex-direction: column;
 }
 
@@ -93,6 +92,7 @@ a {
     padding: 0;
     white-space: nowrap;
     overflow-x: auto;
+    margin: 50px 0 0 0;
 }
 
 .thumbnail-image {
@@ -116,18 +116,17 @@ Enlarged Thumbnail Image
 ****************************/
 
 .detail-image-container {
-    flex: 1 1 auto;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .detail-image-frame {
-    position: relative;
-    text-align: center;
+   text-align: center;
+    top: 15px;
 }
 
 .detail-image {
+    position: relative;
     width: 400px;
     height: 400px;
 }
@@ -143,42 +142,29 @@ Media Queries
 *************************/
 
 @media all and (max-width: 800px) {
-    #quoteDisplay {
-
-    }
-
-
-
-   .main-content {
+    .main-content {
         flex-direction: row;
         overflow: hidden;
+        overflow-y: scroll;
     }
 
     .thumbnail-list {
         flex-direction: column;
         order: 0;
-        margin-left: 30px;
+        align-items: center;
+        width: 100%;
         top: 50px;
         justify-content: space-between;
         }
 
         .thumbnail-item {
-            min-width: 160px;
-            max-width: 180px;
+            min-width: 250px;
+            max-width: 250px;
         }
         .thumbnail-item + .thumbnail-item {
             margin-top: 20px;
         }
-    
-        .detail-image-frame {
-            position: relative;
-            top: 150px;
-            text-align: center;
-        }
-    
-        .detail-image, .detail-image-title {
-        width: 250px;
-        height: 250px;
-        font-size: 20px; 
-        }
+    .detail-image-frame {
+        display: none;
+    }
 }
